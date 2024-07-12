@@ -10,11 +10,11 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2"
+  region = "us-west-2"
 }
 
 module "ec2_instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
+  source = "terraform-aws-modules/ec2-instance/aws"
 
   name = "single-instance"
 
@@ -24,15 +24,16 @@ module "ec2_instance" {
   vpc_security_group_ids = ["sg-12345678"]
   subnet_id              = "subnet-eddcdzz4"
 
-ebs_block_device {
-        device_name = "/dev/xvdba"
-        volume_size = 10
-        volume_type ="gp3"
+  ebs_block_device {
+    device_name = "/dev/xvdba"
+    volume_size = 10
+    volume_type = "gp3"
 
-}
+  }
 
   tags = {
     Terraform   = "true"
     Environment = "dev"
+    git_org     = "itariq20"
   }
 }
