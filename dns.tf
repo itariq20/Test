@@ -28,8 +28,15 @@ resource "aws_route53_zone" "this" {
     ignore_changes = [vpc]
   }
   tags = {
-    yor_name  = "this"
-    yor_trace = "69e36383-ceca-4d98-b992-cb02f8a010a3"
+    yor_name             = "this"
+    yor_trace            = "69e36383-ceca-4d98-b992-cb02f8a010a3"
+    git_commit           = "a0908cd9516cc4c766b453586d177b001967997e"
+    git_file             = "dns.tf"
+    git_last_modified_at = "2025-04-01 22:14:16"
+    git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
+    git_modifiers        = "31933916+itariq20"
+    git_org              = "itariq20"
+    git_repo             = "Test"
   }
 }
 
