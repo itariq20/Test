@@ -28,8 +28,15 @@ resource "aws_route53_zone" "this" {
     ignore_changes = [vpc]
   }
   tags = {
-    yor_name  = "this"
-    yor_trace = "e5379dc7-74bc-49dc-8b58-607b659f5f10"
+    yor_name             = "this"
+    yor_trace            = "e5379dc7-74bc-49dc-8b58-607b659f5f10"
+    git_commit           = "a67dce50f4a49fb1c5c7d8953480e609fa1449dc"
+    git_file             = "fasfas.tf"
+    git_last_modified_at = "2025-04-15 01:29:14"
+    git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
+    git_modifiers        = "31933916+itariq20"
+    git_org              = "itariq20"
+    git_repo             = "Test"
   }
 }
 
