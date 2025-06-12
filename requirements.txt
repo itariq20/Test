@@ -1,0 +1,16 @@
+boto3>=1.34.0
+boxsdk[jwt]>=3.5.0
+numpy~=1.26.3
+openpyxl==3.1.0
+pandas~=2.2.0
+psycopg2-binary~=2.9.9
+pyarrow~=17.0.0
+PyYAML==6.0.1
+requests==2.28.1
+setuptools~=70.0
+snowflake-sqlalchemy==1.4.7
+sqlalchemy==1.4.49
+
+
+--extra-index-url https://${JFROG_USERNAME}:${JFROG_PASSWORD}@lineage.jfrog.io/lineage/api/pypi/trans-ds-adroit/simple
+adroit==0.1.4
