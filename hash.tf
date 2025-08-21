@@ -1,0 +1,27 @@
+module "vpc" {
+  source = "git::https://github.com/terraform-aws-modules/terraform-aws-vpc.git?ref=26c38a66f12e7c6c93b6a2ba127ad68981a48671" # commit hash of version 5.0.0version = "5.0.0"
+
+  name = "my-vpc"
+  cidr = "10.0.0.0/16"
+
+  azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+
+  enable_nat_gateway = true
+  enable_vpn_gateway = true
+
+  tags = {
+    Terraform            = "true"
+    Environment          = "dev"
+    yor_name             = "vpc"
+    yor_trace            = "40e78af2-8258-42e8-9a6d-c25856aa2a45"
+    git_commit           = "af2019a70e6dda2051c5ff2ce1a56551f435400e"
+    git_file             = "hash.tf"
+    git_last_modified_at = "2025-08-21 22:56:37"
+    git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
+    git_modifiers        = "31933916+itariq20"
+    git_org              = "itariq20"
+    git_repo             = "Test"
+  }
+}
