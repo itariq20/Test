@@ -1,5 +1,5 @@
 module "vpc" {
-source = "git::https://github.com/terraform-aws-modules/terraform-aws-vpc.git?ref=26c38a66f12e7c6c93b6a2ba127ad68981a48671"  # commit hash of version 5.0.0version = "5.0.0"
+  source = "git::https://github.com/terraform-aws-modules/terraform-aws-vpc.git?ref=26c38a66f12e7c6c93b6a2ba127ad68981a48671" # commit hash of version 5.0.0version = "5.0.0"
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
@@ -12,7 +12,9 @@ source = "git::https://github.com/terraform-aws-modules/terraform-aws-vpc.git?re
   enable_vpn_gateway = true
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = "dev"
+    yor_name    = "vpc"
+    yor_trace   = "40e78af2-8258-42e8-9a6d-c25856aa2a45"
   }
 }
