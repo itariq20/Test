@@ -13,9 +13,16 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform   = "true"
-    Environment = "dev"
-    yor_name    = "vpc"
-    yor_trace   = "e6758c38-095e-49f8-bdb2-3681fc71b08a"
+    Terraform            = "true"
+    Environment          = "dev"
+    yor_name             = "vpc"
+    yor_trace            = "e6758c38-095e-49f8-bdb2-3681fc71b08a"
+    git_commit           = "8e0d6dabe665f527042737290a1565b248f55f64"
+    git_file             = "ckv2test.tf"
+    git_last_modified_at = "2025-12-05 23:42:12"
+    git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
+    git_modifiers        = "31933916+itariq20"
+    git_org              = "itariq20"
+    git_repo             = "Test"
   }
 }
