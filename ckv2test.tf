@@ -1,5 +1,5 @@
 module "vpc" {
- source = "git::https://github.com/example/module?ref=main"
+  source = "git::https://github.com/example/module?ref=main"
 
 
   name = "my-vpc"
@@ -13,7 +13,9 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = "dev"
+    yor_name    = "vpc"
+    yor_trace   = "e6758c38-095e-49f8-bdb2-3681fc71b08a"
   }
 }
