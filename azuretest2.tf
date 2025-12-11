@@ -14,7 +14,6 @@ terraform {
 provider "azurerm" {
   features {}
   # WARNING: Replace 'YOUR_AZURE_SUBSCRIPTION_ID' with your actual ID
-  subscription_id = "YOUR_AZURE_SUBSCRIPTION_ID"
 }
 
 # 3. Resource: Azure Resource Group (Example Azure Resource)
@@ -22,15 +21,8 @@ resource "azurerm_resource_group" "test_rg" {
   name     = "xyz-resource-group"
   location = "East US" # Replace with your desired Azure region (location)
   tags = {
-    yor_name             = "test_rg"
-    yor_trace            = "537d7908-90ed-425b-a343-31e140d1a9e0"
-    git_commit           = "7cb00a7ebd54135621a5027dbd0e3d2735bc6db1"
-    git_file             = "azuretest1.tf"
-    git_last_modified_at = "2025-12-11 18:31:26"
-    git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
-    git_modifiers        = "31933916+itariq20"
-    git_org              = "itariq20"
-    git_repo             = "Test"
+    yor_name  = "test_rg"
+    yor_trace = "5c0da4c2-9c1e-425e-aefe-323458e8a272"
   }
 }
 
