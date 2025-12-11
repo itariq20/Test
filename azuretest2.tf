@@ -20,6 +20,10 @@ provider "azurerm" {
 resource "azurerm_resource_group" "test_rg" {
   name     = "xyz-resource-group"
   location = "East US" # Replace with your desired Azure region (location)
+  tags = {
+    yor_name  = "test_rg"
+    yor_trace = "5c0da4c2-9c1e-425e-aefe-323458e8a272"
+  }
 }
 
 # Output to confirm deployment
