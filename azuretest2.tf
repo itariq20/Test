@@ -21,8 +21,15 @@ resource "azurerm_resource_group" "test_rg" {
   name     = "xyz-resource-group"
   location = "East US" # Replace with your desired Azure region (location)
   tags = {
-    yor_name  = "test_rg"
-    yor_trace = "5c0da4c2-9c1e-425e-aefe-323458e8a272"
+    yor_name             = "test_rg"
+    yor_trace            = "5c0da4c2-9c1e-425e-aefe-323458e8a272"
+    git_commit           = "0a8efd64b66ead6f56b2c509da3c2973ed55ca95"
+    git_file             = "azuretest2.tf"
+    git_last_modified_at = "2025-12-11 18:33:33"
+    git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
+    git_modifiers        = "31933916+itariq20"
+    git_org              = "itariq20"
+    git_repo             = "Test"
   }
 }
 
