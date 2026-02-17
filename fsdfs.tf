@@ -6,9 +6,9 @@ resource "aws_iam_user" "user" {
     Name        = "${local.resource_prefix.value}-user"
     Environment = local.resource_prefix.value
     }, {
-    git_commit           = "f715cf64dbd146e8a9f84ee3e96b26bea2526a08"
-    git_file             = "iamtest.tf"
-    git_last_modified_at = "2026-01-26 20:58:48"
+    git_commit           = "6988acb171ee05bcde2d8b178440a6e7fc52dcfd"
+    git_file             = "fsdfs.tf"
+    git_last_modified_at = "2026-02-10 01:05:44"
     git_last_modified_by = "31933916+itariq20@users.noreply.github.com"
     git_modifiers        = "31933916+itariq20"
     git_org              = "itariq20"
