@@ -24,6 +24,7 @@ resource "aws_instance" "example_instance" {
     yor_name             = "example_instance"
     yor_trace            = "566b9020-c467-4a57-8cce-707eed79119d"
   }
+  monitoring = true
 }
 
 # Output values
