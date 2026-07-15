@@ -31,6 +31,7 @@ resource "azurerm_resource_group" "test_rg" {
     git_modifiers        = "31933916+itariq20"
     git_org              = "itariq20"
     git_repo             = "Test"
+    manny                = "cepeda"
   }
 }
 
