@@ -148,7 +148,7 @@ say_hello("World")
 - [x] Write Python code to generate this file
 - [x] Include various markdown elements
 - [ ] Take a well-deserved break
-- REDIS_PASSWWORD=<managed-secret>
+- REDIS_PASSWORD=<managed-secret>
 
 ---
 *End of test document.*
