@@ -43,5 +43,6 @@ module "ec2_instance" {
     git_repo             = "Test"
     yor_name             = "ec2_instance"
     yor_trace            = "dc49d9da-cc96-4e62-9e5e-7d5455127f2d"
+    manny                = "cepeda"
   }
 }
